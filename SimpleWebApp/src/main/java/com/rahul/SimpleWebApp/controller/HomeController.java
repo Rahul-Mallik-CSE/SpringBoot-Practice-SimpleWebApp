@@ -10,7 +10,7 @@ public class HomeController {
     
     @RequestMapping("/")
     public String greet(){
-        return "Welcome to Sprint Boot Practice Project";
+        return "Welcome to Spring Boot Practice Project";
     }
 
     @RequestMapping("/about")
