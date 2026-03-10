@@ -1,4 +1,4 @@
-package com.rahul.SimpleWebApp;
+package com.rahul.SimpleWebApp.controller;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
