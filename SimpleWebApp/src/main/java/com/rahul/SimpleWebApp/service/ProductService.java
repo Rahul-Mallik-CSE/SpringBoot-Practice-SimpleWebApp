@@ -3,8 +3,11 @@ package com.rahul.SimpleWebApp.service;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.rahul.SimpleWebApp.model.Product;
 
+@Service
 public class ProductService {
 
     List<Product> products = Arrays.asList(
@@ -14,5 +17,11 @@ public class ProductService {
 
     public List<Product> getProducts(){
         return products;
+    }
+
+    public Product getProductById(int prodId){
+        return products.stream()
+                .filter(p -> p.getProdId() == prodId)
+                .findFirst().get();
     }
 }
