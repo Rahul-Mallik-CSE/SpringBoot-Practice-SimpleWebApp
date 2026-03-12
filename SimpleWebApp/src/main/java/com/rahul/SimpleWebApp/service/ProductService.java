@@ -1,5 +1,6 @@
 package com.rahul.SimpleWebApp.service;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -10,10 +11,10 @@ import com.rahul.SimpleWebApp.model.Product;
 @Service
 public class ProductService {
 
-    List<Product> products = Arrays.asList(
+    List<Product> products = new ArrayList<>( Arrays.asList(
         new Product(100, "Iphone", 5000),
         new Product(101, "Samsung", 4000),
-        new Product(102, "OnePlus", 3000));
+        new Product(102, "OnePlus", 3000)));
 
     public List<Product> getProducts(){
         return products;
