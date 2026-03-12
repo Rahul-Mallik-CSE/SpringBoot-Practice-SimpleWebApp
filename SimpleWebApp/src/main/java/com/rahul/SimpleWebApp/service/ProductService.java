@@ -24,4 +24,8 @@ public class ProductService {
                 .filter(p -> p.getProdId() == prodId)
                 .findFirst().orElse(new Product(100, "No Item Found", 0));
     }
+
+    public void addProduct(Product prod){
+        products.add(prod);
+    }
 }
